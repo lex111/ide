@@ -52,14 +52,14 @@
       </div>
       <settings v-show="this.$store.state.showSettings"></settings>
     </div>
-    
+
     <modal name="download-modal" transition="pop-out" :width="680" :pivot-y="0.2" :height="auto">
       <div class="download-modal-title flex-center">
         confirm file name
       </div>
       <div class="download-modal-content flex-center">
         <span>File Name:</span>
-        <input v-on:keyup.enter="downloadCode" v-on:change="updateFileName" 
+        <input v-on:keyup.enter="downloadCode" v-on:change="updateFileName"
               ref="fileName" :value="this.$store.state.fileName" placeholder="Enter File name">
       </div>
       <div class="download-modal-button-set flex-space-between">
@@ -126,14 +126,14 @@
     components: {language, Settings, Share, LoginButton},
     data() {
       return {
-        languages: ['C', 'C++', 'C#', 'Java', 'Python', 'Python3', 'Javascript', 'NodeJs', 'Ruby'],
+        languages: ['C', 'C++', 'C#', 'Java', 'Python', 'Python 3', 'JavaScript', 'Node.js', 'Ruby'],
         fullscreen: false,
         loading: false,
         fileName: this.$store.state.fileName
       }
     },
     methods: {
-      runCode() {        
+      runCode() {
         this.loading = !this.loading
         this.$store.dispatch('runCode').then((data) => {
           if (!this.$store.state.showInOutBox)
@@ -401,7 +401,7 @@
   }
 
   .download-modal-title {
-    height: 60px;    
+    height: 60px;
     font-size: 24px;
     font-weight: 500;
   }
@@ -489,7 +489,7 @@
     height: 60px;
     border-bottom: 2px solid #ccc;
   }
-  
+
   .shortcuts-modal-content {
     font-size: 16px;
     font-weight: 400;

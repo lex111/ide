@@ -61,9 +61,9 @@ export default new Vuex.Store({
         'C#': 'csharp',
         'Java': 'java',
         'Python': 'python',
-        'Python3': 'python',
-        'Javascript': 'javascript',
-        'NodeJs': 'javascript',
+        'Python 3': 'python',
+        'JavaScript': 'javascript',
+        'Node.js': 'javascript',
         'Ruby': 'ruby'
       }
       const extension = {
@@ -72,9 +72,9 @@ export default new Vuex.Store({
         'C#': '.cs',
         'Java': '.java',
         'Python': '.py',
-        'Python3': '.py',
-        'Javascript': '.js',
-        'NodeJs': '.js',
+        'Python 3': '.py',
+        'JavaScript': '.js',
+        'Node.js': '.js',
         'Ruby': '.rb'
       }
       state.language = val
@@ -138,7 +138,7 @@ export default new Vuex.Store({
         console.log(state)
         return Object.keys(state)
           .filter(key => included.includes(key))
-          .reduce((acc, key) => ({[key]: state[key], ...acc}), {})        
+          .reduce((acc, key) => ({[key]: state[key], ...acc}), {})
       },
       })).plugin
   ],
@@ -216,7 +216,7 @@ export default new Vuex.Store({
         case 'C#':
           lang = 'csharp';
           break
-        case 'Javascript':
+        case 'JavaScript':
           lang = 'jsv';
           break
         case 'Java':
@@ -225,10 +225,10 @@ export default new Vuex.Store({
         case 'Python':
           lang = 'py2';
           break
-        case 'Python3':
+        case 'Python 3':
           lang = 'py3';
           break
-        case 'NodeJs':
+        case 'Node.js':
           lang = 'js';
           break
         case 'Ruby':

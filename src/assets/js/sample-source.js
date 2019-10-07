@@ -47,7 +47,7 @@ const py3_sample =
   'print("Hello World!")';
 
 const js_sample =
-  `/* 
+  `/*
     Use INPUT variable to get stdin.
     Try console.log(INPUT);
 */
@@ -61,9 +61,9 @@ const lang_samples = {
   'C#': csharp_sample,
   'Java': java_sample,
   'Python': py2_sample,
-  'Python3': py3_sample,
-  'Javascript': js_sample,
-  'NodeJs': js_sample,
+  'Python 3': py3_sample,
+  'JavaScript': js_sample,
+  'Node.js': js_sample,
   'Ruby': ruby_sample
 };
 
